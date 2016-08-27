@@ -102,7 +102,7 @@ if($hasHat) {
 
 This will output:
 ```
-Susan owns no blue hats!
+Susan has no blue hats!
 ```
 
 ### GetLastInsertId
