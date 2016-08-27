@@ -8,7 +8,7 @@ class SQLManager {
 			$cdb = $c["database"];
 			$this->pdo = new PDO("mysql:host=".$cdb["host"].";dbname=".$cdb["schema"], $cdb["username"], $cdb["password"]);
 			$this->pdo->setAttribute(PDO::ATTR_ORACLE_NULLS, PDO::NULL_TO_STRING);
-		} catch(PDOException $e) { ErrorLog:AddError("SQLManager->__construct", $e->message); }
+		} catch(PDOException $e) { ErrorLog::AddError("SQLManager->__construct", $e->message); }
 	}
 	public static function ToSQLDate($date) { return $date->format("Y-m-d H:i:s"); }
 	public function Query($sql, $valsObj = []) {
