@@ -79,13 +79,13 @@ Big Bob's trilby is grey!
 QueryCount is the same as QueryVal, but its return is wrapped in ```intval```, so the result will always be an integer type.
 ```php
 $sql = new SQLManager();
-$hatCount = $sql->QueryCount("SELECT COUNT(*) FROM hats WHERE owner = :o", ["o" => "Bob"]);
-echo "Bob owns $hatCount hats!";
+$hatCount = $sql->QueryCount("SELECT COUNT(*) FROM hats");
+echo "There are $hatCount hats!";
 ```
 
 This will output:
 ```
-Bob owns 3 hats!
+There are 6 hats!
 ```
 
 ### QueryExists
