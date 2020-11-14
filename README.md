@@ -1,5 +1,8 @@
 # SQLManager - PHP MySQL Helper
 
+## no
+This is a dead whatsit. Use the [BeeDB](https://github.com/HauntedBees/BeeAPI/blob/main/Core/BeeDB.php) class in BeeAPI instead. If you don't want to use the rest of the BeeAPI, just take that file and change the constructor a bit.
+
 **SQLManager** is a PHP Class to help make interacting with your MySQL database easy. Using the *PHP Data Objects* (PDO) extension, **SQLManager** is an easily reusable class that lets you focus on reading and writing data to your database without having to have PDO initialization code everywhere.
 
 ## Setup
